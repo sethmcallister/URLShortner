@@ -1,0 +1,6 @@
+#parse("/web/layout/layout.vm")
+#@mainLayout()
+<form id="indexForm" method="post">
+
+</form>
+#end

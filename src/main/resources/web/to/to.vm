@@ -1,0 +1,36 @@
+#parse("/web/layout/layout.vm")
+#@mainLayout()
+<form id="toForm" method="post">
+    <script type="text/javascript">
+        sa_client = "e40b1cd6c7586f2ccc51c77c75022a9c";
+        sa_code = "9250e1b23a8481007206b5297c43c303";
+        sa_protocol = ("https:"==document.location.protocol)?"https":"http";
+        sa_pline = "0";
+        sa_maxads = "4";
+        sa_bgcolor = "FFFFFF";
+        sa_bordercolor = "BDD631";
+        sa_superbordercolor = "BDD631";
+        sa_linkcolor = "001EB5";
+        sa_desccolor = "000000";
+        sa_urlcolor = "788300";
+        sa_b = "0";
+        sa_format = "banner_728x90_4";
+        sa_width = "728";
+        sa_height = "90";
+        sa_location = "0";
+        sa_radius = "0";
+        sa_borderwidth = "1";
+        sa_font = "0";
+    </script>
+
+    <body>
+    <p>You will be redirected in 3 seconds</p>
+    <script>
+        var timer = setTimeout(function() {
+            window.location='http://$redirect'
+        }, 3000);
+    </script>
+
+    <script type="text/javascript" src="//sa.entireweb.com/sense2.js"></script>
+</form>
+#end
